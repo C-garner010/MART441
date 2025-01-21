@@ -1,0 +1,92 @@
+body {
+    padding:1.5em;
+    margin: .25em;
+    font-size:18px;
+    text-indent: 1.5em;
+    background-image: url("img/jelly.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 200;
+}
+
+.description {
+    background-color: rgb(199, 208, 254, .5);
+    position: center;
+    text-align: center;
+}
+
+.interests {
+    background-color: #c7d0fe;
+    position: center;
+    text-align: center;
+} 
+
+.main-container {
+    border-style: solid;
+    border-width: 5px;
+    padding: 1.5em;
+    background: #c7d0fe;
+    width: 84%;
+    margin: auto;
+}
+
+div {
+    text-align: center;
+    line-height: 1.33em;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.hero-image {
+    height: 50vh;
+    min-height: auto;
+    background-image:
+    linear-gradient(
+        rgba(0,0,0,.3),
+        rgba(0,0,0,.7)),
+    url("img/jelly.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 1.5em;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgb(0, 0, 0 white);
+}
+
+#hero-title {
+    color: #fff;
+    float: right;
+    margin-top: 33px;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding: 1em;
+    text-align: center;
+}
+
+
+h1 {
+    font-size: 2.5em;
+    text-align:right;
+    color: white;
+    font-weight: 333;
+}
+
+h2 {
+    font-size:26px;
+    text-align:center;
+}
+
+h3 {
+    font-size:24px;
+    text-align:right;
+}
+
+h4 {
+    font-size:24px;
+    text-align:center;
+}
