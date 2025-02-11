@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+<title>Choose your own adventure</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="image-container">
+        <img id="storyImage" src="" alt="Story Scene" class="hidden">
+    </div>
+
+    <br>
+    <h1>A Magical Monday</h1>
+
+    <div id="story">
+        You're a wizard who just finished braving the enchanted forrest. 
+        <br>
+        You get to rest now.
+        <br>
+        Would you prefer to rest on the beach or in the mountains?
+    </div>
+
+    <br>
+
+    <input type="text" id="choice1" placeholder="Enter 'beach' or 'mountains'">
+
+    <br>
+
+    <button id="btnSubmit1" onclick="getChoice1()">Submit</button>
+
+    <input type="text" id="choice2" placeholder="Enter your next choice" style="display: none;">
+    <button id="btnSubmit2" onclick="getChoice2()" style="display: none;">Submit</button>
+
+    <input type="text" id="choice3" placeholder="Enter your final choice" style="display: none;">
+    <button id="btnSubmit3" onclick="getChoice3()" style="display: none;">Submit</button>
+
+    <br>
+    <button id="btnRestart" onclick="restart()">Restart Game</button>
+
+</body>
+<script src="script.js"></script>
+</html>
