@@ -1,0 +1,25 @@
+body {
+    font-family:'Times New Roman', Times, serif;
+    background-color: aliceblue;
+    align-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+}
+
+.grid img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+
+

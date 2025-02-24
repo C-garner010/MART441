@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Game Over</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Game Over!</h1>
+    <p id="finalMessage"></p>
+    <button onclick="restartGame()">Play Again</button>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const playerData = JSON.parse(localStorage.getItem("playerData"));
+
+            if (!playerData) {
+                document.getElementById("finalMessage").textContent = "No game data found.";
+                return;
+            }
+
+            document.getElementById("finalMessage").textContent = 
+                `Congratulations, ${playerData.firstName} ${playerData.lastName} (age: ${playerData.age})! 
+                You completed the game in ${playerData.attempts} attempts.`;
+
+            setTimeout(() => {
+                window.location.href = "index.html";
+            }, 5000);
+        });
+
+        function restartGame() {
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+</html>
