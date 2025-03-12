@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+img {
+    max-width: 88vh;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+#image-container {
+    position: relative;
+    margin-top: 20px;
+    z-index: 1;
+}
+
+#text-container {
+    position: relative;
+    margin-top: 20px;
+    z-index: 2;
+}
+
+#text-container p {
+    position: absolute; 
+    display: none;
+    white-space: nowrap; 
+}
+
+#image-container img, #text-container p {
+    display: none;
+}
+
+#image-container img:first-child {
+    display: block;
+}
+
+.shape {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(0,0,255,0.5);
+}
