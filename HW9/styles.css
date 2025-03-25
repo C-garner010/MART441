@@ -1,0 +1,90 @@
+#crew-list {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.crew-member {
+    padding: 15px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    width: 220px;
+    text-align: center;
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.crew-member:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    cursor: pointer;
+}
+
+.crew-member {
+    opacity: 0; 
+    animation: fadeIn 0.5s forwards; 
+}
+
+@keyframes fadeIn {
+    100% {
+        opacity: 1;
+    }
+}
+
+.crew-member {
+    background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.crew-member:hover {
+    transform: scale(1.05);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9; 
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: flex-start; 
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #1c1b36;
+    padding-top: 20px;
+}
+
+button {
+    background: linear-gradient(45deg, #06163e, #4a2d4c);
+    color: white;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #4a2d4c, #06163e);
+    transform: scale(1.1);
+}
+
+button:active {
+    transform: scale(1.05);
+}
+
