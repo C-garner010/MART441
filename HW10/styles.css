@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    background-color: #ffffff;
+    overflow: hidden; 
+}
+
+#gameCanvas {
+    width: 800px; 
+    height: 600px; 
+    border: 10px solid black; 
+    display: block;
+    background-color: transparent; 
+}
+
+#bgMusic {
+    display: none;
+}
