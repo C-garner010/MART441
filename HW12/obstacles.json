@@ -1,0 +1,9 @@
+
+[
+    { "id": 1, "type": "rock", "x": 100, "y": 150, "width": 40, "height": 40 },
+    { "id": 2, "type": "tree", "x": 200, "y": 100, "width": 50, "height": 70 },
+    { "id": 3, "type": "rock", "x": 300, "y": 200, "width": 40, "height": 40 },
+    { "id": 4, "type": "tree", "x": 400, "y": 300, "width": 50, "height": 70 },
+    { "id": 5, "type": "rock", "x": 150, "y": 250, "width": 40, "height": 40 }
+]
+  
