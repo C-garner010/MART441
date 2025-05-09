@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Final Racer Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="startScreen" class="screen" style="display: block;">
+    <h1>Racer Game</h1>
+      <p>High Score: <span id="highScoreDisplay">0</span></p>
+      <button id="startButton">Start Game</button>
+    </div>
+  
+    <div id="levelUpScreen" class="screen" style="display: none;">
+      <h2>Level <span id="nextLevelNum">2</span> Unlocked!</h2>
+      <button id="nextLevelButton">Continue</button>
+    </div>
+  
+    <div id="gameArea" style="display: none;">
+      <div id="score">Score: 0</div>
+      <div id="levelIndicator">Level 1</div>
+      <div id="player"></div>
+    </div>
+  
+    <div id="gameOverScreen" class="screen" style="display: none;">
+      <h2>Game Over!</h2>
+      <p>Your Score: <span id="finalScore">0</span></p>
+      <p>High Score: <span id="finalHighScore">0</span></p>
+      <button id="restartButton">Start Over</button>
+    </div>
+  
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    
+
+</body>
+</html>
